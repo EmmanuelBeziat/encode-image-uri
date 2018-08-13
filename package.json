@@ -1,0 +1,22 @@
+{
+	"name": "encode-image-uri",
+	"version": "1.0.0",
+	"description": "Simple plugin to encode images to base64, with option to choose mimetype",
+	"main": "encode-image-uri.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EmmanuelBeziat/encode-image-uri.git"
+	},
+	"keywords": [
+		"browser",
+		"image",
+		"canvas",
+		"base64"
+	],
+	"author": "EmmanuelBeziat <contact@emmanuelbeziat.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/EmmanuelBeziat/encode-image-uri/issues"
+	},
+	"homepage": "https://github.com/EmmanuelBeziat/encode-image-uri#readme"
+}
