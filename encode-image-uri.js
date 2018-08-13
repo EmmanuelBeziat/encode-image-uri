@@ -20,7 +20,9 @@ module.exports = (url, callback) => {
 		const ctx = canvas.getContext('2d')
 		const contentType = mimes[url.split('.').pop()] || 'image/jpeg'
 
-		canvas.width = canvas.height = 0
+		canvas.width = image.width
+		canvas.height = image.height
+
 		ctx.drawImage(image, 0, 0)
 		callback(null, canvas.toDataURL(contentType))
 	})

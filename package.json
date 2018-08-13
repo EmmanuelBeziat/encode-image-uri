@@ -1,6 +1,6 @@
 {
 	"name": "encode-image-uri",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Simple plugin to encode images to base64, with option to choose mimetype",
 	"main": "encode-image-uri.js",
 	"repository": {
