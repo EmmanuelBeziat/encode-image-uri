@@ -34,4 +34,8 @@ module.exports = (url, callback) => {
 	if (!canvas.getContext) {
 		setTimeout(callback, 0, new Error('Canvas is not supported'))
 	}
+	else {
+		image.setAttribute('crossOrigin', 'anonymous')
+		image.src = url
+	}
 }
