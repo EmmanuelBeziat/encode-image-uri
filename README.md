@@ -17,14 +17,39 @@ $ yarn add encode-image-uri
 ```javascript
 const encodeImageURI = require('encode-image-uri')
 
-encodeImageURI('path/to/image', (error, uri) => {
-	if (!error) {
-		// Do stuff
-		console.log(uri)
-	}
-	else {
-		// Handle error
+encodeImageURI(image)
+	.then(base64 => {
+		console.log(base64)
+		// Do your stuff
+	})
+	.catch(error => {
 		console.error(error)
-	}
+		// Handle your error
+	})
+```
+
+Note that the image fiven must be a File object.
+
+## Example
+
+### Image from an input with multiple files
+
+```html
+<input type="file" class="input-file" multiple>
+```
+
+```javascript
+documment.querySelector('.input-file').addEventListener(event, (event) => {
+	const fileList = event.target.files
+
+	Array.from(fileList).forEach(image => {
+		encodeImageURI(image).then(base64 => {
+			console.log(base64)
+		})
+	})
 })
 ```
+
+## Contribute
+
+I’ll happily get your PR :)
