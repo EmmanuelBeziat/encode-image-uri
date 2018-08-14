@@ -1,8 +1,6 @@
 # encode-image-uri
 
-Simple plugin to encode images to base64.
-
-* Allow to select mimetype between `image/png` (by default), `image/jpeg`, or `image/gif`
+Simple plugin to encode images to base64, with a mimetype conservation (jpg, png, gif, etc).
 
 ## Installation
 
